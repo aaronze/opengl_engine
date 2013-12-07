@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Student</author>
+      <authoring_tool>OpenCOLLADA2011 Hotfix 3 x64</authoring_tool>
+      <comments>
+			ColladaMaya export options: 
+			bakeTransforms=1;relativePaths=1;copyTextures=0;exportTriangles=1;exportCgfxFileReferences=0;
+			isSampling=0;curveConstrainSampling=0;removeStaticCurves=1;exportPolygonMeshes=1;exportLights=1;
+			exportCameras=0;exportJointsAndSkin=1;exportAnimations=1;exportInvisibleNodes=1;exportDefaultCameras=0;
+			exportTexCoords=1;exportNormals=1;exportNormalsPerVertex=1;exportVertexColors=1;exportVertexColorsPerVertex=1;
+			exportTexTangents=0;exportTangents=0;exportReferencedMaterials=0;exportMaterialsOnly=0;
+			exportXRefs=1;dereferenceXRefs=1;exportCameraAsLookat=0;cameraXFov=1;cameraYFov=1;doublePrecision=0
+		</comments>
+      <source_data>file:///C:/Users/Student/Documents/maya/projects/default/untitled</source_data>
+    </contributor>
+    <created>2011-08-10T12:36:10</created>
+    <modified>2011-08-10T12:36:10</modified>
+    <unit name="centimeter" meter="0.01"/>
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_materials>
+    <material id="phong1" name="phong1">
+      <instance_effect url="#phong1-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="phong1-fx">
+      <profile_COMMON>
+        <newparam sid="file2-surface">
+          <surface type="2D">
+            <init_from>file2</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="file2-sampler">
+          <sampler2D>
+            <source>file2-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="file2-sampler" texcoord="TEX0">
+                <extra>
+                  <technique profile="OpenCOLLADAMaya">
+                    <blend_mode>NONE</blend_mode>
+                    <coverageU>1</coverageU>
+                    <coverageV>1</coverageV>
+                    <fast>0</fast>
+                    <mirrorU>0</mirrorU>
+                    <mirrorV>0</mirrorV>
+                    <noiseU>0</noiseU>
+                    <noiseV>0</noiseV>
+                    <offsetU>0</offsetU>
+                    <offsetV>0</offsetV>
+                    <repeatU>1</repeatU>
+                    <repeatV>1</repeatV>
+                    <rotateFrame>0</rotateFrame>
+                    <rotateUV>0</rotateUV>
+                    <stagger>0</stagger>
+                    <translateFrameU>0</translateFrameU>
+                    <translateFrameV>0</translateFrameV>
+                    <wrapU>1</wrapU>
+                    <wrapV>1</wrapV>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>20</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <reflectivity>
+              <float>0.5</float>
+            </reflectivity>
+            <transparent opaque="RGB_ZERO">
+              <color>0 0 0 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images>
+    <image id="file2" name="file2">
+      <init_from>./AsteroidDiffuse.tga</init_from>
+      <extra>
+        <technique profile="OpenCOLLADAMaya">
+          <dgnode_type>kFile</dgnode_type>
+          <image_sequence>0</image_sequence>
+          <originalMayaNodeId>file2</originalMayaNodeId>
+        </technique>
+      </extra>
+    </image>
+  </library_images>
+  <library_geometries>
+    <geometry id="pCubeShape2" name="pCubeShape2">
+      <mesh>
+        <source id="pCubeShape2-positions" name="pCubeShape2-positions">
+          <float_array id="pCubeShape2-positions-array" count="78">-23.53481 -20.63805 16.86266 32.26665 -13.34282 20.33405 -31.65938 28.2935 15.87464 20.00491 37.19216 19.29894 -38.47001 19.57911 -96.04437 20.64753 36.27072 -88.02293 -22.06778 -35.57684 -105.3526 41.18692 -20.48866 -97.28407 4.102649 -22.9055 41.17654 -5.933158 41.43343 35.17761 -13.82151 37.73022 -108.1767 14.83903 -40.61359 -125.3443 -35.50797 5.551943 36.88413 33.67746 12.97599 39.47002 -46.33534 30.58434 -40.35187 26.58067 48.57932 -32.64719 -42.46885 -13.92078 -123.2252 43.48637 11.03741 -110.2958 -31.64148 -38.95317 -45.98922 50.58315 -24.56592 -38.17857 -1.15259 11.04824 64 -13.10203 51.47206 -35.5688 0.7460938 -3.225962 -142.5834 12.69553 -43.64978 -43.01462 51.5103 14.70522 -34.11994 -51.91679 -6.882938 -44.46349</float_array>
+          <technique_common>
+            <accessor source="#pCubeShape2-positions-array" count="26" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="pCubeShape2-normals" name="pCubeShape2-normals">
+          <float_array id="pCubeShape2-normals-array" count="78">-0.5311301 -0.7435276 0.406285 0.7219201 -0.5238294 0.4521439 -0.7563947 0.5579375 0.3414275 0.4812256 0.8031226 0.351306 -0.7511569 0.5442315 -0.3735981 0.4164864 0.8373161 -0.3541761 -0.4560838 -0.8284954 -0.3249352 0.847103 -0.4102251 -0.3378341 0.09726176 -0.8343376 0.5426056 -0.1738579 0.8788103 0.4443713 -0.1901933 0.8519071 -0.4879351 0.2541234 -0.833649 -0.4903575 -0.8587918 -0.1170853 0.4987662 0.82101 0.2089313 0.53131 -0.8315238 0.5553975 0.01008652 0.4862626 0.8737943 0.005696555 -0.8299333 -0.1730267 -0.5303513 0.8121905 0.3346087 -0.477895 -0.5209742 -0.8479705 0.09763161 0.8369821 -0.5381566 0.09923927 -0.04380851 0.07107589 0.9965084 -0.2315074 0.9727473 -0.01291681 0.05900188 0.1477294 -0.9872664 0.1793423 -0.9778581 0.1078409 0.9551238 0.2911299 0.05460702 -0.9760922 -0.2093395 0.05848876</float_array>
+          <technique_common>
+            <accessor source="#pCubeShape2-normals-array" count="26" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="pCubeShape2-map1" name="pCubeShape2-map1">
+          <float_array id="pCubeShape2-map1-array" count="68">0.412522 0.8266938 0.3596525 0.8041484 0.314656 0.8687578 0.4130679 0.9172875 0.314656 0.8687578 0.3596525 0.8041484 0.412522 0.8266938 0.4130679 0.9172875 0.4688659 0.796639 0.5070111 0.8569003 0.5070111 0.8569003 0.4688659 0.796639 0.3426399 0.704134 0.4193139 0.6991459 0.3580632 0.5971237 0.4250128 0.5681314 0.4842489 0.5826193 0.4950969 0.6905308 0.2964872 0.5249428 0.4197265 0.4489984 0.2964872 0.5249428 0.3580632 0.5971237 0.4250128 0.5681314 0.4197265 0.4489984 0.484249 0.5826193 0.5382642 0.499221 0.5382642 0.499221 0.3426399 0.704134 0.4193139 0.6991459 0.4950969 0.6905308 0.2555639 0.70165 0.2555639 0.70165 0.5719324 0.6790709 0.5719324 0.6790709</float_array>
+          <technique_common>
+            <accessor source="#pCubeShape2-map1-array" count="34" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="pCubeShape2-vertices" name="pCubeShape2-vertices">
+          <input semantic="POSITION" source="#pCubeShape2-positions"/>
+          <input semantic="NORMAL" source="#pCubeShape2-normals"/>
+        </vertices>
+        <triangles material="phong1SG" count="48">
+          <input semantic="VERTEX" source="#pCubeShape2-vertices" offset="0"/>
+          <input semantic="TEXCOORD" source="#pCubeShape2-map1" offset="1" set="0"/>
+          <p>1 1 13 2 8 0 8 0 13 2 20 3 3 5 9 6 13 4 13 4 9 6 20 7 2 8 12 9 9 6 9 6 12 9 20 7 0 11 8 0 12 10 12 10 8 0 20 3 9 6 3 5 21 13 21 13 3 5 15 12 15 12 5 14 21 13 21 13 5 14 10 15 10 15 4 16 21 13 21 13 4 16 14 17 14 17 2 8 21 13 21 13 2 8 9 6 5 14 17 18 10 15 10 15 17 18 22 19 7 21 11 22 17 20 17 20 11 22 22 23 11 22 6 24 22 23 22 23 6 24 16 25 4 16 10 15 16 26 16 26 10 15 22 19 11 22 7 21 23 28 23 28 7 21 19 27 19 27 1 1 23 28 23 28 1 1 8 0 8 0 0 11 23 28 23 28 0 11 18 29 18 29 6 24 23 28 23 28 6 24 11 22 19 27 7 21 24 30 24 30 7 21 17 20 17 18 5 14 24 31 24 31 5 14 15 12 15 12 3 5 24 31 24 31 3 5 13 4 13 2 1 1 24 30 24 30 1 1 19 27 18 29 0 11 25 32 25 32 0 11 12 10 12 9 2 8 25 33 25 33 2 8 14 17 14 17 4 16 25 33 25 33 4 16 16 26 16 25 6 24 25 32 25 32 6 24 18 29</p>
+        </triangles>
+      </mesh>
+      <extra>
+        <technique profile="OpenCOLLADAMaya">
+          <originalMayaNodeId>pCubeShape2</originalMayaNodeId>
+          <double_sided>1</double_sided>
+        </technique>
+      </extra>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="VisualSceneNode" name="untitled">
+      <node id="pCube2" name="pCube2" type="NODE">
+        <matrix sid="transform">0.55 0 0 -3.310186 0 0.55 0 0 0 0 0.55 20.85928 0 0 0 1</matrix>
+        <instance_geometry url="#pCubeShape2">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="phong1SG" target="#phong1">
+                <bind_vertex_input semantic="TEX0" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="OpenCOLLADAMaya">
+            <originalMayaNodeId>pCube2</originalMayaNodeId>
+          </technique>
+        </extra>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#VisualSceneNode"/>
+  </scene>
+</COLLADA>

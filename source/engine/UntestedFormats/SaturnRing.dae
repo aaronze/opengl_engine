@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Student</author>
+      <authoring_tool>OpenCOLLADA2011 Hotfix 3 x64</authoring_tool>
+      <comments>
+			ColladaMaya export options: 
+			bakeTransforms=1;relativePaths=1;copyTextures=0;exportTriangles=1;exportCgfxFileReferences=0;
+			isSampling=0;curveConstrainSampling=0;removeStaticCurves=1;exportPolygonMeshes=1;exportLights=1;
+			exportCameras=0;exportJointsAndSkin=1;exportAnimations=1;exportInvisibleNodes=1;exportDefaultCameras=0;
+			exportTexCoords=1;exportNormals=1;exportNormalsPerVertex=1;exportVertexColors=1;exportVertexColorsPerVertex=1;
+			exportTexTangents=0;exportTangents=0;exportReferencedMaterials=0;exportMaterialsOnly=0;
+			exportXRefs=1;dereferenceXRefs=1;exportCameraAsLookat=0;cameraXFov=1;cameraYFov=1;doublePrecision=0
+		</comments>
+      <source_data>file:///C:/Users/Student/Documents/maya/projects/default/untitled</source_data>
+    </contributor>
+    <created>2011-08-10T13:56:37</created>
+    <modified>2011-08-10T13:56:37</modified>
+    <unit name="centimeter" meter="0.01"/>
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_materials>
+    <material id="SturnRing" name="SturnRing">
+      <instance_effect url="#SturnRing-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="SturnRing-fx">
+      <profile_COMMON>
+        <newparam sid="file3-surface">
+          <surface type="2D">
+            <init_from>file3</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="file3-sampler">
+          <sampler2D>
+            <source>file3-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="file3-sampler" texcoord="TEX0">
+                <extra>
+                  <technique profile="OpenCOLLADAMaya">
+                    <blend_mode>NONE</blend_mode>
+                    <coverageU>1</coverageU>
+                    <coverageV>1</coverageV>
+                    <fast>0</fast>
+                    <mirrorU>0</mirrorU>
+                    <mirrorV>0</mirrorV>
+                    <noiseU>0</noiseU>
+                    <noiseV>0</noiseV>
+                    <offsetU>0</offsetU>
+                    <offsetV>0</offsetV>
+                    <repeatU>1</repeatU>
+                    <repeatV>1</repeatV>
+                    <rotateFrame>0</rotateFrame>
+                    <rotateUV>0</rotateUV>
+                    <stagger>0</stagger>
+                    <translateFrameU>0</translateFrameU>
+                    <translateFrameV>0</translateFrameV>
+                    <wrapU>1</wrapU>
+                    <wrapV>1</wrapV>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>20</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <reflectivity>
+              <float>0.5</float>
+            </reflectivity>
+            <transparent opaque="RGB_ZERO">
+              <color>0 0 0 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images>
+    <image id="file3" name="file3">
+      <init_from>./SaturnRingsDiffuse.tga</init_from>
+      <extra>
+        <technique profile="OpenCOLLADAMaya">
+          <dgnode_type>kFile</dgnode_type>
+          <image_sequence>0</image_sequence>
+          <originalMayaNodeId>file3</originalMayaNodeId>
+        </technique>
+      </extra>
+    </image>
+  </library_images>
+  <library_geometries>
+    <geometry id="pCylinderShape1" name="pCylinderShape1">
+      <mesh>
+        <source id="pCylinderShape1-positions" name="pCylinderShape1-positions">
+          <float_array id="pCylinderShape1-positions-array" count="240">0.93942 1 -0.3052361 0.7991185 1 -0.5805935 0.5805935 1 -0.7991185 0.3052361 1 -0.93942 0 1 -0.9877646 -0.3052361 1 -0.93942 -0.5805935 1 -0.7991183 -0.7991182 1 -0.5805934 -0.9394197 1 -0.305236 -0.9877644 1 0 -0.9394197 1 0.305236 -0.7991182 1 0.5805933 -0.5805933 1 0.7991182 -0.305236 1 0.9394196 0 1 0.9877642 0.3052359 1 0.9394196 0.5805932 1 0.799118 0.799118 1 0.5805932 0.9394196 1 0.3052359 0.9877642 1 0 1.417867 1 -0.4606928 1.20611 1 -0.8762898 0.8762899 1 -1.20611 0.4606929 1 -1.417867 0 1 -1.490833 -0.4606928 1 -1.417867 -0.8762897 1 -1.206109 -1.206109 1 -0.8762897 -1.417866 1 -0.4606927 -1.490833 1 0 -1.417866 1 0.4606927 -1.206109 1 0.8762896 -0.8762896 1 1.206109 -0.4606927 1 1.417866 0 1 1.490833 0.4606926 1 1.417866 0.8762894 1 1.206109 1.206109 1 0.8762896 1.417866 1 0.4606928 1.490833 1 0 0.8800373 1 -0.4484014 0.6984016 1 -0.6984016 0.4484014 1 -0.8800372 0.1545086 1 -0.9755287 -0.1545086 1 -0.9755287 -0.4484014 1 -0.8800372 -0.6984014 1 -0.6984014 -0.880037 1 -0.4484013 -0.9755285 1 -0.1545085 -0.9755285 1 0.1545085 -0.880037 1 0.4484012 -0.6984013 1 0.6984013 -0.4484012 1 0.880037 -0.1545085 1 0.9755284 0.1545085 1 0.9755284 0.4484011 1 0.8800368 0.6984012 1 0.6984012 0.8800368 1 0.4484012 0.9755283 1 0.1545085 0.9755286 1 -0.1545086 1.32824 1 -0.6767722 1.054098 1 -1.054097 0.6767723 1 -1.32824 0.2331999 1 -1.472366 -0.2331998 1 -1.472366 -0.6767722 1 -1.32824 -1.054097 1 -1.054097 -1.32824 1 -0.6767721 -1.472365 1 -0.2331997 -1.472365 1 0.2331998 -1.32824 1 0.6767721 -1.054097 1 1.054097 -0.676772 1 1.32824 -0.2331998 1 1.472365 0.2331997 1 1.472365 0.6767719 1 1.32824 1.054097 1 1.054097 1.32824 1 0.6767721 1.472365 1 0.2331998 1.472365 1 -0.2331998</float_array>
+          <technique_common>
+            <accessor source="#pCylinderShape1-positions-array" count="80" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="pCylinderShape1-normals" name="pCylinderShape1-normals">
+          <float_array id="pCylinderShape1-normals-array" count="240">0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0</float_array>
+          <technique_common>
+            <accessor source="#pCylinderShape1-normals-array" count="80" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="pCylinderShape1-map1" name="pCylinderShape1-map1">
+          <float_array id="pCylinderShape1-map1-array" count="240">-0.810583 0.9899769 -0.8105832 0.9899772 -0.03910506 0.01324439 -0.03910589 0.01324446 -0.8105823 0.9899769 -0.03910577 0.01324445 -0.2000582 0.9935563 -0.03910507 0.01324446 -0.8105828 0.9899769 -0.03910625 0.01324445 -0.8105819 0.9899773 -0.03910518 0.01324447 -0.8105828 0.9899769 -0.960108 0.00801774 -0.810582 0.9899769 -0.8105829 0.9899772 -0.9601082 0.008017555 -0.03910565 0.01324441 -0.2000583 0.9935571 -0.03910556 0.01324439 -0.8105826 0.9899772 -0.8105832 0.9899775 -0.9601085 0.00801754 -0.03910565 0.01324445 -0.8105832 0.9899773 -0.0391061 0.01324445 -0.8105826 0.9899769 -0.03910553 0.01324459 -0.8105832 0.9899772 -0.03910524 0.01324454 -0.8105832 0.9899772 -0.03910542 0.01324439 -0.8105832 0.9899769 -0.03910506 0.01324439 -0.8105831 0.9899772 -0.03910518 0.01324445 -0.8105832 0.9899775 -0.03910589 0.01324441 -0.8105829 0.9899775 -0.03910589 0.01324448 -0.8105819 0.9899769 -0.03910536 0.01324457 -0.8105829 0.9899769 -0.03910518 0.01324445 -0.2000571 0.9935564 -0.03910619 0.01324457 -0.9601082 0.0080176 -0.9601086 0.008017734 -0.9601083 0.0080176 -0.200058 0.9935565 -0.9601081 0.008017749 -0.200058 0.9935564 -0.2000577 0.9935565 -0.9601083 0.00801754 -0.9601084 0.008017719 -0.2000574 0.9935564 -0.9601086 0.008017719 -0.2000583 0.9935571 -0.960108 0.00801754 -0.2000583 0.993557 -0.9601083 0.008017622 -0.2000576 0.9935564 -0.960108 0.0080176 -0.2000571 0.9935569 -0.9601086 0.008017659 -0.2000574 0.9935569 -0.960108 0.008017659 -0.2000583 0.9935569 -0.9601079 0.008017749 -0.2000582 0.993557 -0.9601086 0.008017734 -0.200058 0.9935564 -0.9601083 0.008017749 -0.200058 0.9935564 -0.2000582 0.9935564 -0.9601078 0.0080176 -0.2000579 0.993557 -0.9601083 0.008017592 -0.200058 0.9935564 -0.2000573 0.9935564 -0.5053206 0.9917668 -0.4996073 0.0106311 -0.5053206 0.9917666 -0.4996067 0.01063103 -0.5053204 0.9917671 -0.4996069 0.01063098 -0.5053202 0.991767 -0.4996067 0.010631 -0.5053207 0.9917669 -0.4996071 0.010631 -0.5053203 0.9917668 -0.4996072 0.0106311 -0.5053206 0.9917668 -0.4996071 0.01063116 -0.5053204 0.9917669 -0.4996066 0.01063114 -0.5053208 0.991767 -0.4996067 0.01063102 -0.5053203 0.991767 -0.4996068 0.01063102 -0.5053202 0.9917669 -0.4996066 0.01063102 -0.5053203 0.9917668 -0.4996071 0.01063102 -0.5053208 0.9917673 -0.4996069 0.01063101 -0.5053206 0.9917673 -0.499607 0.01063114 -0.5053197 0.9917667 -0.4996068 0.01063108 -0.5053201 0.9917667 -0.4996073 0.01063105 -0.5053202 0.9917667 -0.4996066 0.01063111 -0.50532 0.9917668 -0.4996072 0.0106311 -0.5053204 0.9917667 -0.4996071 0.01063102 -0.5053198 0.9917667 -0.4996066 0.010631</float_array>
+          <technique_common>
+            <accessor source="#pCylinderShape1-map1-array" count="120" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="pCylinderShape1-vertices" name="pCylinderShape1-vertices">
+          <input semantic="POSITION" source="#pCylinderShape1-positions"/>
+          <input semantic="NORMAL" source="#pCylinderShape1-normals"/>
+        </vertices>
+        <triangles material="phong2SG" count="80">
+          <input semantic="VERTEX" source="#pCylinderShape1-vertices" offset="0"/>
+          <input semantic="TEXCOORD" source="#pCylinderShape1-map1" offset="1" set="0"/>
+          <p>20 47 60 81 0 1 0 1 60 81 40 80 1 78 40 80 21 3 21 3 40 80 60 81 1 0 21 77 41 82 41 82 21 77 61 83 2 6 41 82 22 7 22 7 41 82 61 83 2 15 22 16 42 84 42 84 22 16 62 85 3 76 42 84 23 17 23 17 42 84 62 85 3 14 23 75 43 86 43 86 23 75 63 87 4 18 43 86 24 19 24 19 43 86 63 87 4 21 24 22 44 88 44 88 24 22 64 89 5 74 44 88 25 23 25 23 44 88 64 89 5 20 25 72 45 90 45 90 25 72 65 91 6 73 45 90 26 25 26 25 45 90 65 91 6 24 26 70 46 92 46 92 26 70 66 93 7 71 46 92 27 27 27 27 46 92 66 93 7 26 27 68 47 94 47 94 27 68 67 95 8 69 47 94 28 29 28 29 47 94 67 95 8 28 28 66 48 96 48 96 28 66 68 97 9 67 48 96 29 31 29 31 48 96 68 97 9 30 29 64 49 98 49 98 29 64 69 99 10 65 49 98 30 33 30 33 49 98 69 99 10 32 30 62 50 100 50 100 30 62 70 101 11 63 50 100 31 35 31 35 50 100 70 101 11 34 31 60 51 102 51 102 31 60 71 103 12 61 51 102 32 37 32 37 51 102 71 103 12 36 32 58 52 104 52 104 32 58 72 105 13 59 52 104 33 39 33 39 52 104 72 105 13 38 33 56 53 106 53 106 33 56 73 107 14 57 53 106 34 41 34 41 53 106 73 107 14 40 34 54 54 108 54 108 34 54 74 109 15 55 54 108 35 43 35 43 54 108 74 109 15 42 35 53 55 110 55 110 35 53 75 111 16 44 55 110 36 45 36 45 55 110 75 111 16 12 36 13 56 112 56 112 36 13 76 113 17 52 56 112 37 11 37 11 56 112 76 113 17 10 37 50 57 114 57 114 37 50 77 115 18 51 57 114 38 9 38 9 57 114 77 115 18 8 38 48 58 116 58 116 38 48 78 117 19 49 58 116 39 5 39 5 58 116 78 117 19 4 39 46 59 118 59 118 39 46 79 119 20 2 0 79 79 119 79 119 0 79 59 118</p>
+        </triangles>
+      </mesh>
+      <extra>
+        <technique profile="OpenCOLLADAMaya">
+          <originalMayaNodeId>pCylinderShape1</originalMayaNodeId>
+          <double_sided>1</double_sided>
+        </technique>
+      </extra>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="VisualSceneNode" name="untitled">
+      <node id="pCylinder1" name="pCylinder1" type="NODE">
+        <matrix sid="transform">1123.03 0 0 0 0 1123.03 0 -1123.369 0 0 1123.03 3940.029 0 0 0 1</matrix>
+        <instance_geometry url="#pCylinderShape1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="phong2SG" target="#SturnRing">
+                <bind_vertex_input semantic="TEX0" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="OpenCOLLADAMaya">
+            <originalMayaNodeId>pCylinder1</originalMayaNodeId>
+          </technique>
+        </extra>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#VisualSceneNode"/>
+  </scene>
+</COLLADA>

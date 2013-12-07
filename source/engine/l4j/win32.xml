@@ -1,0 +1,6 @@
+<launch4jConfig>
+	<headerType>console</headerType>
+	<outfile>Engine-Win32.exe</outfile>
+	<jar>./dist/SAGMA.jar</jar>
+	
+</launch4jConfig>

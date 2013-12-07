@@ -1,0 +1,116 @@
+V 1.1.0
+
+- Added: 3D lighting
+- Added: 3D sound
+
+V 1.0.0
+
+- Added: User interface system and components
+- Added: Point cloud rendering engine
+
+V 0.9.0
+
+- Added: New mesh system CMF file format
+
+V 0.8.0
+
+- Added: Particle effects
+
+V 0.7.1
+
+- Added: Volume rendering - cloud
+
+V 0.7.0
+
+- Added: Volume rendering - grass
+
+V 0.6.0
+
+- Added: Directed Field Planetoid generation
+- Added: Mesh animation
+
+V 0.5.0
+
+- Added: Biomes now can contain texture samples
+- Added: Biome-Planet generation
+
+V 0.4.0
+
+- Added: Biomes implemented
+- Added: Octrees and tirangle-triangle collision
+- Fixed: Gave particles an overhaul making it much more simpler
+- Fixed: Applications now automatically receive keyboard input
+- Fixed: Bounding spheres now work as intended
+
+V 0.3.3
+
+- Added nested children for instances
+- Added a framework for point-cloud rendering
+- Added a framework for automaic graphical context retrieval
+- Added some convenience methods to instances
+- Added a framework for skeletal animation
+
+V 0.3.2
+
+- Added planetoid support
+- Added tutorial 6
+
+V 0.3.1
+
+- Added material support for zones
+- Added folder framework for applications
+- Added a neat world demo application
+- Added dynamic zone generation capabilities
+
+V 0.3.0
+
+- Added tutorial 5
+- Added 3D camera transformations
+- Added perspective support
+- Added rotation support for matrices
+- Added a full feature ai engine
+
+V 0.2.0
+
+- Added sprite-masks
+- Improved sprite blending
+- Made the configuration file auto-create itself
+- Added options to the game configuration
+- Gave the game-loading engine a facelift
+- Added the ability to move the camera to an object
+- Altered the blending functions
+- Added the RTS
+
+V 0.1.3
+
+- Added a patching system
+- Added a manifest system
+- Added texture transparencies
+- Fixed texture coordinate bug
+- Added fine-tuned duration events
+- Added tutorial 4
+- Added sprites
+
+V 0.1.2
+
+- Modified the implementation of camera
+- Deprecated ObjectManager
+- Added tutorial 3
+- EventAction was changed to CollisionEventAction
+- Added object visibility
+- Added object solidity
+- Added object picking
+- Added ray-sphere intersection
+
+V 0.1.1
+
+- Added support for dynamic array generation
+- Added tutorial 2
+- Added the heart beat
+
+V 0.1.0
+
+- Added collision detection
+- Improved the GUI of the engine loader
+- Added the change log
+- Added tutorial 1
